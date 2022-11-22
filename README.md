@@ -55,7 +55,7 @@ The application will generate a *.txt* file containing the text extracted from t
 
 The application was tested with the following image:
 
-![test](https://user-images.githubusercontent.com/65744020/203184537-1224f584-ed06-4690-b5da-81e37b07acd0.jpg)
+>![test](https://user-images.githubusercontent.com/65744020/203184537-1224f584-ed06-4690-b5da-81e37b07acd0.jpg)
 
 The output of the application was the following:
 > Home
