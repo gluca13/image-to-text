@@ -1,35 +1,38 @@
-
 class Writer:
     def __init__(self, path, text):
-        self._path = path
-        self._text = text
+        self.__path = path
+        self.__text = text
         self.fix_path()
         self.convert()
 
+    @property
+    def text(self):
+        return self.__text
 
-# C:\Users\PC\Desktop\pap\test.jpg
+    @property
+    def path(self):
+        return self.__path
 
+    @path.setter
+    def path(self, path):
+        self.__path = path
 
-    def get_text(self):
-        return self._text
-
-    def get_path(self):
-        return self._path
+    @text.setter
+    def text(self, text):
+        self.__text = text
 
     def fix_path(self):
         try:
-            for i in range(len(self._path)-1, -1, -1):
-                if self._path[i] == '.':
-                    self._path = self._path[:i]
-                    print(self._path)
+            for i in range(len(self.path)-1, -1, -1):
+                if self.path[i] == '.':
+                    self.path = self.path[:i] + '.txt'
                     break
-            self._path += '.txt'
         except Exception as e:
             print(e)
 
     def convert(self):
         try:
-            with open(self._path, 'w') as f:
-                f.write(self._text)
+            with open(self.path, 'w') as f:
+                f.write(self.text)
         except Exception as e:
             print(e)
