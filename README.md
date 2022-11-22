@@ -1,3 +1,4 @@
+
 # image-to-text
 CLI python application that extracts the text within an image to a *.txt* file. The image must have some text in it for this app to work.
 
@@ -16,7 +17,7 @@ pip install pytesseract
 The library (if used on Windows OS) requires the tesseract.exe binary to be also present for proper installation of the library. During the [installation](https://github.com/UB-Mannheim/tesseract/wiki) of the aforementioned executable, we would be prompted to specify a path for it. This path needs to be remembered as it would be utilized later on in the code. For most installations the path would be *C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe*
 
 ###  *2. Running the application*
-The application is run by executing the following command in the terminal:
+The application is run by executing the following command in the terminal, positioned in */src* folder:
 
 **Linux**
 ```bash
